@@ -14,6 +14,19 @@
         <span data-ng-if="!costumer.user">Deleted User</span>
       </small>
       <h4 class="list-group-item-heading" data-ng-bind="costumer.name"></h4>
+      <small class="list-group-item-text">
+        Address: 
+        <span data-ng-bind="costumer.address"></span>
+      </small><br/>
+      <small class="list-group-item-text">
+        State: 
+        <span data-ng-bind="costumer.state"></span>
+      </small><br/>
+      <small class="list-group-item-text">
+        Country: 
+        <span data-ng-bind="costumer.country"></span>
+      </small><br/>
+
     </a>
   </div>
   <div class="alert alert-warning text-center" data-ng-if="vm.costumers.$resolved && !vm.costumers.length">
